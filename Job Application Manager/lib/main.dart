@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'location_page.dart';
 
 void main() => runApp(MyApp());
 
@@ -13,6 +14,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
+// Home Page
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -24,9 +26,11 @@ class HomePage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            // change sizebox color
+
             SizedBox(
-              height: 100,
-              width: 150,
+              height: 120,
+              width: 200,
               child: ElevatedButton(
                 onPressed: () {
                   Navigator.push(
@@ -34,12 +38,12 @@ class HomePage extends StatelessWidget {
                     MaterialPageRoute(builder: (context) => PageOne()),
                   );
                 },
-                child: Text('Application'),
+                child: Text('Application List'),
               ),
             ),
             SizedBox(
-              height: 100,
-              width: 100,
+              height: 120,
+              width: 200,
               child: ElevatedButton(
                 onPressed: () {
                   Navigator.push(
@@ -51,21 +55,21 @@ class HomePage extends StatelessWidget {
               ),
             ),
             SizedBox(
-              height: 100,
-              width: 100,
+              height: 120,
+              width: 200,
               child: ElevatedButton(
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => PageThree()),
+                    MaterialPageRoute(builder: (context) => LocationPage()),
                   );
                 },
                 child: Text('Location Map'),
               ),
             ),
             SizedBox(
-              height: 100,
-              width: 100,
+              height: 120,
+              width: 200,
               child: ElevatedButton(
                 onPressed: () {
                   Navigator.push(
@@ -89,13 +93,13 @@ class PageOne extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Page One'),
+        title: Text('Application List'),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text('Page One'),
+            Text('Application List'),
             SizedBox(
               height: 100,
               width: 100,
@@ -113,31 +117,19 @@ class PageOne extends StatelessWidget {
   }
 }
 
-// write text field widget in application page
-class TextFieldWidget extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return TextField(
-      decoration: InputDecoration(
-        border: OutlineInputBorder(),
-        labelText: 'Enter your text',
-      ),
-    );
-  }
-}
-
+// Reminder Page or To Do List Page
 class PageTwo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Page Two'),
+        title: Text('To Do List'),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text('Page Two'),
+            Text('To Do List'),
             SizedBox(
               height: 100,
               width: 100,
@@ -155,47 +147,43 @@ class PageTwo extends StatelessWidget {
   }
 }
 
+// Location Map Page
+
+/*
 class PageThree extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Page Three'),
+        title: Text('Job Map'),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text('Page Three'),
-            SizedBox(
-              height: 100,
-              width: 100,
-              child: ElevatedButton(
-                onPressed: () {
-                  Navigator.pop(context);
-                },
-                child: Text('Back'),
-              ),
-            ),
-          ],
+          children: <Widget>[],
         ),
       ),
     );
   }
 }
+*/
 
+// read the location of the device and show the location on class PageThree
+// show the location on PageThree
+
+// Other Resources Page
 class PageFour extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Page Four'),
+        title: Text('Other Resources'),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text('Page Four'),
+            Text('Learning Resources and Advertisement'),
             SizedBox(
               height: 100,
               width: 100,
