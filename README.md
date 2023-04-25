@@ -4,15 +4,14 @@ The Job Application Manager is a mobile application designed to help users who a
 
 ## Use this README File 
 
-Use this section to show us what your Mobile App is about.   Include a Screenshot to the App, link to the various frameworks you've used. Include your presentation video here that shows off your Mobile App.   Emojis are also fun to include 📱 😄
+Job Application Manager Screenshot  
 
-Look at some other Flutter Apps online and see how they use there README File.  Good examples are:
+<img src=https://raw.githubusercontent.com/Derp015/casa0015-mobile-assessment_myApp/main/screenshot/Screenshot_20230425_135931.jpg alt="1" width="200">
+<img src=https://raw.githubusercontent.com/Derp015/casa0015-mobile-assessment_myApp/main/screenshot/Screenshot_20230425_135938.jpg alt="1" width="200">
+<img src=https://raw.githubusercontent.com/Derp015/casa0015-mobile-assessment_myApp/main/screenshot/Screenshot_20230425_135949.jpg alt="1" width="200">
+<img src=https://raw.githubusercontent.com/Derp015/casa0015-mobile-assessment_myApp/main/screenshot/Screenshot_20230425_140000.jpg alt="1" width="200">
+<img src=https://raw.githubusercontent.com/Derp015/casa0015-mobile-assessment_myApp/main/screenshot/Screenshot_20230425_140004.jpg alt="1" width="200">
 
-- https://github.com/miickel/flutter_particle_clock
-- https://github.com/Tarikul711/flutter-food-delivery-app-ui    
-- https://github.com/mohak1283/Instagram-Clone
-
-Job Application Manager Screenshot
 
 The Job Application Manager has four main features:
 
@@ -27,7 +26,9 @@ Flutter SDK: https://flutter.dev
 Geolocator: https://pub.dev/packages/geolocator  
 Google Maps Flutter: https://pub.dev/packages/google_maps_flutter  
 
-🎥 Watch the Presentation Video
+🎥 Watch the Presentation Video (May require download)  
+
+[Demo](video.mp4)
 
 
 ## How To Install The App
@@ -44,10 +45,10 @@ To install and run the Job Application Manager, follow these steps:
 
 Assumed plugin versions:
 
-Flutter SDK: 2.x.x
-Geolocator: ^8.0.0
-Google Maps Flutter: ^2.1.1
-License: MIT License
+Flutter SDK: 2.x.x  
+Geolocator: ^8.0.0  
+Google Maps Flutter: ^2.1.1  
+License: MIT License  
 
 For more information on licenses, you can visit https://choosealicense.com.
 
