@@ -31,14 +31,17 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  sqflite: ^1.1.6+3
-  geolocator: ^7.6.2
+  location: ^4.3.0
+  flutter_map: ^0.14.0
+  sqflite: ^2.0.0+5
+  geolocator: ^8.0.1
   google_maps_flutter: ^2.1.1
+  flutter_local_notifications: ^8.0.0
+  path_provider: ^2.0.8
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
-  path_provider: ^1.1.0
   oktoast: ^2.2.0
   event_bus: ^1.1.0
   flutter_custom_calendar:

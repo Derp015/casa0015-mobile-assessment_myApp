@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'application_page.dart';
+import 'ReminderPage.dart';
+import 'job_info.dart';
 import 'location_page.dart';
 
 void main() => runApp(MyApp());
@@ -15,7 +18,12 @@ class MyApp extends StatelessWidget {
 }
 
 // Home Page
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
+  @override
+  _HomePageState createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -35,7 +43,7 @@ class HomePage extends StatelessWidget {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => PageOne()),
+                    MaterialPageRoute(builder: (context) => InputListPage()),
                   );
                 },
                 child: Text('Application List'),
@@ -48,10 +56,10 @@ class HomePage extends StatelessWidget {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => PageTwo()),
+                    MaterialPageRoute(builder: (context) => ReminderPage()),
                   );
                 },
-                child: Text('Reminder'),
+                child: Text('To Do List'),
               ),
             ),
             SizedBox(
@@ -87,36 +95,7 @@ class HomePage extends StatelessWidget {
   }
 }
 
-// Add a list in the Application page and store the data in the list
-class PageOne extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Application List'),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text('Application List'),
-            SizedBox(
-              height: 100,
-              width: 100,
-              child: ElevatedButton(
-                onPressed: () {
-                  Navigator.pop(context);
-                },
-                child: Text('Back'),
-              ),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
-
+/*
 // Reminder Page or To Do List Page
 class PageTwo extends StatelessWidget {
   @override
@@ -135,7 +114,8 @@ class PageTwo extends StatelessWidget {
               width: 100,
               child: ElevatedButton(
                 onPressed: () {
-                  Navigator.pop(context);
+                  Navigator.pushReplacement(context,
+                      MaterialPageRoute(builder: (context) => HomePage()));
                 },
                 child: Text('Back'),
               ),
@@ -146,31 +126,7 @@ class PageTwo extends StatelessWidget {
     );
   }
 }
-
-// Location Map Page
-
-/*
-class PageThree extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Job Map'),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[],
-        ),
-      ),
-    );
-  }
-}
 */
-
-// read the location of the device and show the location on class PageThree
-// show the location on PageThree
-
 // Other Resources Page
 class PageFour extends StatelessWidget {
   @override
