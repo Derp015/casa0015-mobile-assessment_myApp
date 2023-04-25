@@ -5,12 +5,13 @@ The Job Application Manager is a mobile application designed to help users who a
 ## Use this README File 
 
 Job Application Manager Screenshot  
-
+<p>
 <img src=https://raw.githubusercontent.com/Derp015/casa0015-mobile-assessment_myApp/main/screenshot/Screenshot_20230425_135931.jpg alt="1" width="200">
 <img src=https://raw.githubusercontent.com/Derp015/casa0015-mobile-assessment_myApp/main/screenshot/Screenshot_20230425_135938.jpg alt="1" width="200">
 <img src=https://raw.githubusercontent.com/Derp015/casa0015-mobile-assessment_myApp/main/screenshot/Screenshot_20230425_135949.jpg alt="1" width="200">
 <img src=https://raw.githubusercontent.com/Derp015/casa0015-mobile-assessment_myApp/main/screenshot/Screenshot_20230425_140000.jpg alt="1" width="200">
 <img src=https://raw.githubusercontent.com/Derp015/casa0015-mobile-assessment_myApp/main/screenshot/Screenshot_20230425_140004.jpg alt="1" width="200">
+  </p>
 
 
 The Job Application Manager has four main features:
